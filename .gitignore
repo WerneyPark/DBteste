@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C credentials / passphrases (NUNCA subir senhas reais para o GitHub)
+conexion/passphrase/authentication.oracle
+conexion/passphrase/authentication.postgres
+conexion/passphrase/*.oracle
+conexion/passphrase/*.postgres
+!conexion/passphrase/*.example
+
+# Ambientes virtuais
+env/
+venv/
+.venv/
+ENV/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# DBeaver
+.dbeaver/
+.dbeaver-data/
+
+# Logs e temporarios
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
