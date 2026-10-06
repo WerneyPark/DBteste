@@ -16,6 +16,11 @@ create table ALUNOS(
 	DATA_NASCIMENTO DATE not null
 );
 
+create table TELEFONES(
+	TELEFONE VARCHAR(11) not null,
+	MATRICULA numeric not null
+);
+
 create table PROFESSORES(
 	MATRICULA NUMERIC(5) not null,
 	NOME VARCHAR(100) not null,
@@ -33,8 +38,8 @@ create table ALUNOS_OFERTAS(
 
 create table OFERTAS(
 	CODIGO_OFERTA numeric not null,
-	HORARIO_INICIAL TIMESTAMP not null,
-	HORARIO_FINAL TIMESTAMP not null,
+	HORARIO_INICIAL TIME not null,
+	HORARIO_FINAL TIME not null,
 	DIA_SEMANA VARCHAR(20) not null,
 	MATRICULA NUMERIC(5) not null,
 	CODIGO_DISCIPLINA numeric not null
@@ -48,10 +53,7 @@ create table DISCIPLINAS(
 	CODIGO_DISCIPLINA_DEPENDENCIA NUMERIC
 );
 
-create table TELEFONES(
-	TELEFONE VARCHAR(11) not null,
-	MATRICULA numeric not null
-);
+
 
 
 

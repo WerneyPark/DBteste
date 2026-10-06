@@ -5,7 +5,7 @@
 ###########################################################################
 import os
 import json
-import psycopg2
+import psycopg as psycopg2
 from pandas import DataFrame
 
 class PostgresQueries:
